@@ -1,4 +1,5 @@
 FROM node:16-alpine as builder
+# multi-step process
 WORKDIR '/app'
 COPY package.json .
 RUN npm install
